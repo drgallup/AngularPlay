@@ -1,7 +1,7 @@
 // controller.js
 
-var app = angular.module('myApp', []);
-app.controller('myCtrl', function($scope) {
-    $scope.firstName= "John";
-    $scope.lastName= "Doe";
-});
+var appname = angular.module('appname', []);
+appname.controller('appCtrl', ['$scope',
+  function($scope) {
+    $scope.greeting = { text: 'Hello' };
+}]);

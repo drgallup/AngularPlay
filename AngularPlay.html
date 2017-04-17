@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html>
-<head>
-Hello
-</head>
+<html ng-app="appname">
 
-<body>
-  <div ng-app="myApp" ng-controller="myCtrl">
-    <p>{{ 5+5 }}</p>
-  </div>
-</body>
+  <head>
+    <script src="angular.js"></script>
+    <script src="Controller.js"></script>
+  </head>
 
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-<script src="Controller.js"></script>
-<script src="angular.js"></script>
+  <body>
+    <div ng-controller="appCtrl">
+      <p>{{5+5}} </p>
+    </div>
+  </body>
+
 </html>
