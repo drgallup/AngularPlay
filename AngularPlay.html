@@ -8,15 +8,26 @@
 
 
   <body ng-app="MyApp">
-    <div ng-controller="appCtrl">
-      <p>{{5+5}} </p>
+      <!-- <p>{{5+5}} </p>
       <p class="date">{{ date | date }}</p> 
     </div>
     
     <div ng-controller="appCtrl" ng-cloak="">
       <md-switch ng-model="data.cb1" aria-label="Switch 1">
           Switch 1: {{ data.cb1 }}
-      </md-switch>
+      </md-switch> -->
+      
+      <div ng-controller="AppCtrl" id="popupContainer" ng-cloak>
+          <p>
+            Open a dialog over the app's content. Press escape or click outside to close the dialog and
+            send focus back to the triggering button.
+          </p>
+
+          <div>
+            <md-button ng-click="showAlert($event)"   >
+              Alert Dialog
+            </md-button>
+           </div>
     </div>
   
   <!-- Angular Material requires Angular.js Libraries -->
